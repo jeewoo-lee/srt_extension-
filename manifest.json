@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Random Auto Refresh",
+    "version": "1.0",
+    "description": "Automatically refreshes the page at random intervals between 30 seconds and 1 minute.",
+    "permissions": [
+      "tabs",
+      "scripting",
+      "storage",
+      "alarms"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Random Auto Refresh",
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
+  
